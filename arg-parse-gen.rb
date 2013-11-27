@@ -104,7 +104,7 @@ class BashArgParserGenerator
   # we generate the bash function for parsing the arguments. We make sure that
   # there are no spaces in the name to simplify the generated bash function.
   # The set of options can include :validation, which needs to be a single line
-  # bash code with a placeholder symbol. The placeholder symbol is :argument.
+  # bash command with a placeholder symbol. The placeholder symbol is $arg.
 
   def argument(name, opts = {})
     string_name = name.to_s
